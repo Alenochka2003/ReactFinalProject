@@ -27,6 +27,11 @@
   height: 350px;
   object-fit: cover;
   border-radius: var(--border-radius-large);
+  transition: transform 0.3s ease-in-out; /* Плавный переход */
+}
+
+.categoryImage:hover {
+  transform: scale(0.95); /* Уменьшение размера до 95% */
 }
 
 .categoryName {

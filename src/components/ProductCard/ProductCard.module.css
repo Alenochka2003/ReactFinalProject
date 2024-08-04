@@ -18,8 +18,11 @@
   height: 284px;
   object-fit: cover;
   display: block;
+  transition: transform 0.3s ease-in-out;
 }
-
+.productImage:hover{
+  transform: scale(0.95);
+}
 .discountFlag {
   position: absolute;
   top: 16px;

@@ -1,9 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider as ReduxProvider } from "react-redux";
 
+
+
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import ConnectedModal from "./components/Modal/ConnectedModal";
+
 
 import HomePage from "./pages/Home/HomePage";
 import CategoriesPage from "./pages/Categories/CategoriesPage";
@@ -14,10 +17,14 @@ import ProductDetailsPage from "./pages/ProductDetails/ProductDetailsPage";
 import CartPage from "./pages/Cart/CartPage";
 import NotFoundPage from "./pages/NotFound/NotFoundPage";
 
+
+
+
 import store from "./redux/store";
 import "./App.css";
 
 function App() {
+  
   return (
     <ReduxProvider store={store}>
       <BrowserRouter>
@@ -46,3 +53,4 @@ function App() {
 }
 
 export default App;
+

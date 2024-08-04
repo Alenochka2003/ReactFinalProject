@@ -2,6 +2,7 @@ import { useSearchParams } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+
 import Breadcrumbs from '../../../components/Breadcrumbs/Breadcrumbs';
 import ProductCard from "../../../components/ProductCard/ProductCard";
 import Filter from "../../../components/FilterContainer/Filter/Filter";
@@ -72,6 +73,7 @@ function AllProductsPage() {
   };
 
   if (isLoading) return <p>Loading...</p>;
+
   if (error) return (
     <div style={{
       color: 'red',
