@@ -29,6 +29,12 @@
   }
 
   .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 32px;
+  }
+  
+  .productsContainer {
     /* width: 100%;
     height: auto; */
     gap: 20px;
@@ -93,7 +99,7 @@
 
   .productsContainer {
     grid-template-columns: 1fr;
-    width: 350px;
+    width: 100%;
     height: 200px;
     gap: 12px;
   }

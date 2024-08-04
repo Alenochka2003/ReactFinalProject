@@ -31,7 +31,11 @@
   .productsContainer {
     gap: 24px;
   }
-
+  .productsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    gap: 32px;
+  }
   .sortTitle {
     font-size: 1.2em;
   }
@@ -46,7 +50,7 @@
   }
 
   .productsContainer {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 24px;
   }
 

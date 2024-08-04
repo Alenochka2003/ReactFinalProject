@@ -28,7 +28,7 @@
   justify-content: end;
 }
 
-.discountImage {}
+
 
 .formContent {
   display: flex;
@@ -45,7 +45,7 @@
   gap: 16px;
 }
 
-.formGroup {}
+
 
 .formGroup input {
   width: 100%;
@@ -62,7 +62,7 @@
 
 .formGroup input::placeholder {
   color: var(--color-light);
-  opacity: 0.5;
+  
 }
 
 .getDiscountButton {

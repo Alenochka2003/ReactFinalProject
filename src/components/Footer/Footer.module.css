@@ -139,7 +139,7 @@ iframe {
 
   .gridItem {
     padding: 12px;
-    width: 350px;
+    width: 100%;
     height: 200px;
   }
 
@@ -150,7 +150,7 @@ iframe {
   }
 
   iframe {
-    width: 350px;
+    width: 100%;
     height: 200px;
   }
 
