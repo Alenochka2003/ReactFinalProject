@@ -241,8 +241,9 @@
   color: var(--color-dark-gray);
 }
 
-
-
+/* 
+@media (max-width: 1024px) and (min-width: 768px)
+НУЖНО ДОБАваить  */
 
 
 /* For screens from 1024px to 768px */
