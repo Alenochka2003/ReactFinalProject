@@ -1,9 +1,9 @@
 import React from 'react';
 
 import CheckOutButton from '../../components/Buttons/CheckOutButton/CheckOutButton';
-import CategoriesBlock from '../../components/CategoriesBlock/CategoriesBlock';
+import CategoriesHeader from '../../components/CategoriesHeader/CategoriesHeader';
 import DiscountForm from '../../components/DiscountForm/DiscountForm';
-import SaleBlock from '../../components/SaleBlock/SaleBlock';
+import Sale from '../../components/Sale/Sale';
 import styles from './HomePage.module.css';
 
 import backgroundImg from '../../assets/images/main-bg.jpg';
@@ -19,9 +19,9 @@ function HomePage() {
       </div>
       <div className={styles.mainBgStyle} style={{ backgroundImage: `url(${backgroundImg})` }}></div>
 
-      <CategoriesBlock />
+      <CategoriesHeader />
       <DiscountForm />
-      <SaleBlock />
+      <Sale />
     </div>
   );
 }

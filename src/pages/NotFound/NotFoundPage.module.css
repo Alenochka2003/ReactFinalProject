@@ -64,3 +64,85 @@
   color: var(--color-dark);
   border: 1px solid var(--color-dark);
 } */
+
+/* For screens 1440px and below */
+@media (max-width: 1440px) {
+  .pageNotFoundContainer {
+    margin-top: 60px;
+  }
+
+  .image {
+    max-width: 280px;
+  }
+
+  .message {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .homeButton {
+    min-width: 200px;
+  }
+}
+
+/* For screens 1200px and below */
+@media (max-width: 1024px) {
+  .pageNotFoundContainer {
+    margin-top: 50px;
+  }
+
+  .image {
+    max-width: 260px;
+  }
+
+  .message {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .homeButton {
+    min-width: 180px;
+  }
+}
+
+/* For screens 768px and below */
+@media (max-width: 768px) {
+  .pageNotFoundContainer {
+    margin-top: 30px;
+  }
+
+  .image {
+    max-width: 150px;
+  }
+
+  .message {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .homeButton {
+    min-width: 120px;
+  }
+}
+
+/* For screens 520px and below */
+@media (max-width: 520px) {
+  .pageNotFoundContainer {
+    margin-top: 20px;
+    gap: 16px;
+  }
+
+  .image {
+    max-width: 100px;
+  }
+
+  .message {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .homeButton {
+    min-width: 100px;
+    font-size: 14px;
+  }
+}

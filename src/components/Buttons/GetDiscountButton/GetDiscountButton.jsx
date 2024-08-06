@@ -1,27 +1,37 @@
 import React, { useState } from 'react';
 import styles from './GetDiscountButton.module.css';
 
-function GetDiscountButton({ onClick, disabled }) {
-  const [state, setState] = useState('normal');
+function GetDiscountButton({ onClick }) {
+  const [isRegistered, setIsRegistered] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleClick = (e) => {
-    if (disabled) return;
+    if (isRegistered) return;
 
-    setState('added');
+    setIsRegistered(true);
+    setShowModal(true);
     if (onClick) {
       onClick(e);
     }
-    setTimeout(() => setState('normal'), 2000);
+    setTimeout(() => {
+      setShowModal(false);
+    }, 2000);
   };
 
   return (
-    <button
-      className={`${styles.getDiscountButton} ${state === 'added' ? styles.addedState : ''} ${disabled ? styles.disabled : ''}`}
-      onClick={handleClick}
-      disabled={disabled}
-    >
-      {state === 'added' ? 'Request Submitted' : 'Get a discount'}
-    </button>
+    <div>
+      <button
+        className={`${styles.getDiscountButton} ${isRegistered ? styles.registeredState : ''}`}
+        onClick={handleClick}
+      >
+        {isRegistered ? 'Request Submitted' : 'Get a discount'}
+      </button>
+      {showModal && (
+        <div className={styles.modal}>
+          <div className={styles.modalContent}>Вы зарегистрировались</div>
+        </div>
+      )}
+    </div>
   );
 }
 

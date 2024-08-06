@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import axios from 'axios';
-import styles from '../CategoriesBlock/CategoriesBlock.module.css';
+import styles from './CategoriesHeader.module.css';
 
-const CategoriesBlock = () => {
+const CategoriesHeader = () => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -49,4 +49,4 @@ const CategoriesBlock = () => {
   );
 };
 
-export default CategoriesBlock;
+export default CategoriesHeader;

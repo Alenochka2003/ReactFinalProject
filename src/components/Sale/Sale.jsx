@@ -2,10 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
-import styles from './SaleBlock.module.css';
+import styles from './Sale.module.css';
 import ProductCard from '../ProductCard/ProductCard';
 
-const SaleBlock = () => {
+const Sale = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -47,4 +47,4 @@ const SaleBlock = () => {
   );
 };
 
-export default SaleBlock;
+export default Sale;
