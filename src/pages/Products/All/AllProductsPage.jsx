@@ -5,9 +5,9 @@ import { useEffect, useState } from "react";
 
 import Breadcrumbs from '../../../components/Breadcrumbs/Breadcrumbs';
 import ProductCard from "../../../components/ProductCard/ProductCard";
-import Filter from "../../../components/FilterContainer/Filter/Filter";
-import DiscountedItems from "../../../components/FilterContainer/DiscountedItems/DiscountedItems";
-import SelectSort from "../../../components/FilterContainer/SelectSort/SelectSort";
+import Filter from "../../../components/QuantityContainer/Filter/Filter";
+import Items from "../../../components/QuantityContainer/Items/Items";
+import QuantitySelector from "../../../components/QuantityContainer/QuantitySelector/QuantitySelector";
 import styles from "./AllProductsPage.module.css";
 
 function AllProductsPage() {
@@ -99,10 +99,10 @@ function AllProductsPage() {
         </div>
         <div className={styles.filterContainer}>
           <Filter searchParams={searchParams} setSearchParams={setSearchParams} />
-          <DiscountedItems searchParams={searchParams} setSearchParams={setSearchParams} />
+          <Items searchParams={searchParams} setSearchParams={setSearchParams} />
           <div className={styles.selectSort}>
             <span className={styles.sortTitle}>Sorted</span>
-            <SelectSort sortType={sortType} setSortType={setSortType} searchParams={searchParams} setSearchParams={setSearchParams} />
+            <QuantitySelector sortType={sortType} setSortType={setSortType} searchParams={searchParams} setSearchParams={setSearchParams} />
           </div>
         </div>
         <div className={styles.productsContainer}>

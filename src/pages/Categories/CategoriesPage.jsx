@@ -50,7 +50,7 @@ const CategoriesBlock = () => {
           ))}
         </ul>
 
-      </div>
+      </div>  
     </div>
   );
 };

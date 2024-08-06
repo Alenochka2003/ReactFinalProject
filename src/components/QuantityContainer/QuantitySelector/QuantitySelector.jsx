@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import styles from './SelectSort.module.css';
+import styles from './QuantitySelector.module.css';
 import arrowIcon from '../../../assets/icons/arrow.svg';
 
-const SelectSort = ({ sortType, setSortType, searchParams, setSearchParams }) => {
+const QuantitySelector = ({ sortType, setSortType, searchParams, setSearchParams }) => {
   const [isOpen, setIsOpen] = useState(false);
   const selectRef = useRef(null);
 
@@ -72,4 +72,4 @@ const SelectSort = ({ sortType, setSortType, searchParams, setSearchParams }) =>
   );
 };
 
-export default SelectSort;
+export default QuantitySelector;

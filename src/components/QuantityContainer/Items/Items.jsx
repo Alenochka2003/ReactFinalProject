@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './DiscountedItems.module.css';
+import styles from './Items.module.css';
 
-const DiscountedItems = ({ searchParams, setSearchParams }) => {
+const Items = ({ searchParams, setSearchParams }) => {
   const includeDiscount = searchParams.get("includeDiscount") === "true";
 
   const handleCheckboxChange = (e) => {
@@ -29,4 +29,4 @@ const DiscountedItems = ({ searchParams, setSearchParams }) => {
   );
 };
 
-export default DiscountedItems;
+export default Items;

@@ -4,8 +4,8 @@ import axios from 'axios';
 
 import Breadcrumbs from '../../../components/Breadcrumbs/Breadcrumbs';
 import ProductCard from '../../../components/ProductCard/ProductCard';
-import Filter from '../../../components/FilterContainer/Filter/Filter';
-import SelectSort from '../../../components/FilterContainer/SelectSort/SelectSort';
+import Filter from '../../../components/QuantityContainer/Filter/Filter';
+import QuantitySelector from '../../../components/QuantityContainer/QuantitySelector/QuantitySelector';
 import styles from './DiscountedProductsPage.module.css';
 
 const DiscountedProductsPage = () => {
@@ -96,7 +96,7 @@ const DiscountedProductsPage = () => {
           <Filter searchParams={searchParams} setSearchParams={setSearchParams} />
           <div className={styles.selectSort}>
             <span className={styles.sortTitle}>Sorted by</span>
-            <SelectSort sortType={sortType} setSortType={setSortType} searchParams={searchParams} setSearchParams={setSearchParams} />
+            <QuantitySelector sortType={sortType} setSortType={setSortType} searchParams={searchParams} setSearchParams={setSearchParams} />
           </div>
         </div>
         <div className={styles.productsContainer}>
