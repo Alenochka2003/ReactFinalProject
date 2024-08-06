@@ -46,7 +46,7 @@ h2 {
   margin: 0 0 40px 0;
 }
 
-.globalContainer {
+.HauptContainer {
   max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
   margin-inline: auto;
   padding-inline: var(--container-padding-x);
@@ -64,7 +64,7 @@ textarea:focus {
 
 /* Title h2 and button block -----------------*/
 
-.titleBlock h2 {
+.titleContainer h2 {
   font-size: 64px;
   font-weight: 700;
   line-height: 70.4px;
@@ -73,21 +73,21 @@ textarea:focus {
 
 }
 
-.titleBlock {
+.titleContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 @media (max-width: 768px){
-  .titleBlock {
+  .titleContainer {
     display: flex;
   flex-direction: column;
     align-items: center;
   }}
   
 @media (max-width: 520px){
-.titleBlock {
+.titleContainer {
   display: flex;
 flex-direction: column;
   align-items: center;
@@ -95,20 +95,20 @@ flex-direction: column;
 }
 
 @media (max-width: 520px){
-  .titleBlock h2 {
+  .titleContainer h2 {
   font-size: 40px;
     align-items: center;
   }
 }
 
-.titleBlockLine {
+.titleContainerLine {
   width: 100%;
   height: 1px;
   background-color: var(--color-light-gray);
   margin-left: 32px;
 }
 
-.titleBlockButton {
+.titleContainerButton {
   font-size: 16px;
   font-weight: 500;
   color: var(--color-dark-gray);

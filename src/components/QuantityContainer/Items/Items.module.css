@@ -39,7 +39,7 @@
 .customCheckbox:checked + span::before {
   border-color: var(--color-blue);
   background-color: var(--color-blue);
-  background-image: url("../../../assets/icons/check.svg");
+  background-image: url("../../../assets/icons/galochka.svg");
 }
 
 .customCheckbox:focus + span::before {

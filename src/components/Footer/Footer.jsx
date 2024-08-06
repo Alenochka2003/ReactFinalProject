@@ -4,7 +4,7 @@ import styles from './Footer.module.css';
 
 function Footer() {
   return (
-    <footer className="globalContainer">
+    <footer className="HauptContainer">
       <div className={styles.footerStyle}>
         <h2>Contact</h2>
         <div className={styles.gridContainer}>

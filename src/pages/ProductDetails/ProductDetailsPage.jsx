@@ -72,7 +72,7 @@ function ProductDetailsPage() {
   if (!product) return <p>Product not found.</p>;  // Отображаем сообщение, если продукт не найден
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.productDetailsPage}>
         <Breadcrumbs
           items={[
@@ -233,7 +233,7 @@ export default ProductDetailsPage;
 //   if (!product) return <p>Product not found.</p>;
 
 //   return (
-//     <div className="globalContainer">
+//     <div className="HauptContainer">
 //       <div className={styles.productDetailsPage}>
 //         <Breadcrumbs
 //           items={[

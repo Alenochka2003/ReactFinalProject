@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styles from './NotFoundPage.module.css';
 import NotFound from '../../assets/images/not-found.png';
-import Four from '../../assets/icons/four.svg';
+import Four from '../../assets/icons/4.svg';
 
 const NotFoundPage = () => {
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.pageNotFoundContainer}>
         <div className={styles.imageContainer}>
           <img src={Four} alt="404" className={styles.image} />

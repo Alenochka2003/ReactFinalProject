@@ -2,7 +2,7 @@
   margin-top: var(--blocks-margin-y);
 }
 
-.gridCategoriesContainer {
+.setCategoriesContainer {
   display: grid;
   grid-template-columns: repeat(4, minmax(200px, 1fr));
   gap: 32px;
@@ -10,7 +10,7 @@
   z-index: 10;
 }
 
-.gridCategoriesItem {
+.setCategoriesItem {
   overflow: hidden;
 }
 
@@ -43,7 +43,7 @@
 
 /* Устройства с шириной экрана от 1440px до 1024px */
 @media (max-width: 1440px) and (min-width: 1024px) {
-  .gridCategoriesContainer {
+  .setCategoriesContainer {
     /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
     gap: 24px;
   }
@@ -60,7 +60,7 @@
 
 /* Устройства с шириной экрана от 1024px до 768px */
 @media (max-width: 1024px) and (min-width: 768px) {
-  .gridCategoriesContainer {
+  .setCategoriesContainer {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
     gap: 20px;
   }
@@ -77,7 +77,7 @@
 
 /* Устройства с шириной экрана от 768px до 520px */
 @media (max-width: 768px) and (min-width: 520px) {
-  .gridCategoriesContainer {
+  .setCategoriesContainer {
     grid-template-columns: repeat(2, minmax(150px, 1fr));
     gap: 16px;
   }
@@ -94,7 +94,7 @@
 
 /* Устройства с шириной экрана до 520px */
  @media (max-width: 520px) {
-  .gridCategoriesContainer {
+  .setCategoriesContainer {
     grid-template-columns: 1fr;
     gap: 12px;
    

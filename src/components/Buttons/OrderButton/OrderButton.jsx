@@ -20,7 +20,7 @@ function OrderButton({ onClick, disabled }) {
       onClick={handleClick}
       disabled={disabled}
     >
-      {state === 'ordered' ? 'The order is placed' : 'Place order'}
+      {state === 'ordered' ? 'The order is placed' : 'Order'}
     </button>
   );
 }

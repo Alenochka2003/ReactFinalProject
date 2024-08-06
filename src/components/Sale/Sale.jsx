@@ -25,13 +25,13 @@ const Sale = () => {
   }, []);
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.saleBlock}>
         
-        <div className="titleBlock">
+        <div className="titleContainer">
           <h2>Sale</h2>
-          <div className="titleBlockLine"></div>
-          <Link to="/discounted-products" className="titleBlockButton">
+          <div className="titleContainerLine"></div>
+          <Link to="/discounted-products" className="titleContainerButton">
             All sales
           </Link>
         </div>

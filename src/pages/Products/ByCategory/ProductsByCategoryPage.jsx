@@ -80,7 +80,7 @@ function ProductsByCategoryPage() {
   );
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.productsByCategoryPage}>
         <Breadcrumbs
           items={[

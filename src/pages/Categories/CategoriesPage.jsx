@@ -23,7 +23,7 @@ const CategoriesBlock = () => {
   }, []);
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.categoriesPage}>
 
         <Breadcrumbs
@@ -37,9 +37,9 @@ const CategoriesBlock = () => {
           <h2>Categories</h2>
         </div>
 
-        <ul className={styles.gridCategoriesContainer}>
+        <ul className={styles.setCategoriesContainer}>
           {categories.slice(0, 8).map((category) => (
-            <li key={category.id} className={styles.gridCategoriesItem}>
+            <li key={category.id} className={styles.setCategoriesItem}>
               <Link to={`/categories/${category.id}`} className={styles.categoryItem}>
                 <img src={`http://localhost:3333${category.image}`} alt={category.title} className={styles.categoryImage} />
                 <h3 className={styles.categoryName}>

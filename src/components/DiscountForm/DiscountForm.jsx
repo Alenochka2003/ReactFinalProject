@@ -4,7 +4,7 @@ import { useDispatch } from 'react-redux';
 import { openModal, closeModal } from '../../redux/modalSlice';
 import GetDiscountButton from '../Buttons/GetDiscountButton/GetDiscountButton';
 import styles from './DiscountForm.module.css';
-import discountImage from '../../assets/images/pets.png';
+import discountImage from '../../assets/images/dogscats.png';
 
 function DiscountForm() {
   const [name, setName] = useState('');
@@ -68,7 +68,7 @@ function DiscountForm() {
   };
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.discountFormContainer}>
         <h2>5% off on the first order</h2>
         <div className={styles.formContainer}>

@@ -121,12 +121,12 @@ function CartPage() {
   );
 
   if (cartItems.length === 0) return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.cartPageBlock}>
-        <div className="titleBlock">
+        <div className="titleContainer">
           <h2>Shopping cart</h2>
-          <div className="titleBlockLine"></div>
-          <Link to="/products" className="titleBlockButton">
+          <div className="titleContainerLine"></div>
+          <Link to="/products" className="titleContainerButton">
             Back to the store
           </Link>
         </div>
@@ -139,12 +139,12 @@ function CartPage() {
   );
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.cartPageBlock}>
-        <div className="titleBlock">
+        <div className="titleContainer">
           <h2>Shopping cart</h2>
-          <div className="titleBlockLine"></div>
-          <Link to="/products" className="titleBlockButton">
+          <div className="titleContainerLine"></div>
+          <Link to="/products" className="titleContainerButton">
             Back to the store
           </Link>
         </div>

@@ -86,7 +86,7 @@ function AllProductsPage() {
   );
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.allProductsPage}>
         <Breadcrumbs
           items={[

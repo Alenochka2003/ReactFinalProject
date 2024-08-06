@@ -81,7 +81,7 @@ const DiscountedProductsPage = () => {
   );
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.discountedProductsPage}>
         <Breadcrumbs
           items={[

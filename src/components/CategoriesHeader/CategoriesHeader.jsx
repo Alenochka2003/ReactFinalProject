@@ -20,20 +20,20 @@ const CategoriesHeader = () => {
   }, []);
 
   return (
-    <div className="globalContainer">
+    <div className="HauptContainer">
       <div className={styles.categoriesBlock}>
 
-        <div className="titleBlock">
+        <div className="titleContainer">
           <h2>Categories</h2>
-          <div className="titleBlockLine"></div>
-          <Link to="/categories" className="titleBlockButton">
+          <div className="titleContainerLine"></div>
+          <Link to="/categories" className="titleContainerButton">
             All categories
           </Link>
         </div>
 
-        <ul className={styles.gridCategoriesContainer}>
+        <ul className={styles.setCategoriesContainer}>
           {categories.slice(0, 4).map((category) => (
-            <li key={category.id} className={styles.gridCategoriesItem}>
+            <li key={category.id} className={styles.setCategoriesItem}>
               <Link to={`/categories/${category.id}`} className={styles.categoryItem}>
                 <img src={`http://localhost:3333${category.image}`} alt={category.title} className={styles.categoryImage} />
                 <h3 className={styles.categoryName}>

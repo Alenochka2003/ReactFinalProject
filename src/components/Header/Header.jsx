@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 
 import styles from './Header.module.css';
-import mainLogo from '../../assets/icons/main-logo.svg';
+import Logo from '../../assets/icons/logo.svg';
 import cartIcon from '../../assets/icons/cart.svg';
 
 export default function Header() {
@@ -12,10 +12,10 @@ export default function Header() {
 
   return (
     <header className={styles.Header}>
-      <div className="globalContainer">
+      <div className="HauptContainer">
         <div className={styles.headerContent}>
           <Link to="/">
-            <img src={mainLogo} alt="Main Logo" />
+            <img src={Logo} alt="Logo" />
           </Link>
           <nav className={styles.navBlock}>
             <ul>
