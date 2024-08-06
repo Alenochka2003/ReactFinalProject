@@ -26,6 +26,19 @@ h1 {
   left: 0;
 }
 
+
+
+
+.animationStyle {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%; /* Задайте нужный размер анимации */
+  height: 500px;
+}
+
 /* Устройства с шириной экрана от 1440px до 1024px */
 @media (max-width: 1440px) and (min-width: 1024px) {
   h1 {
