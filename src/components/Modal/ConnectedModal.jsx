@@ -21,8 +21,7 @@ function ConnectedModal() {
         {content.map((p, index) => (
           <p key={index}>{p}</p>
         ))}
-        {/* <div dangerouslySetInnerHTML={{__html: modal.content}}/>  */}
-        {/* опасный способ */}
+       
       </div>
     </Modal>
   );

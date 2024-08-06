@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { useDispatch } from 'react-redux';
 
-import AddBlueButton from '../../components/Buttons/AddBlueButton/AddBlueButton';
+import ButtonAdd from '../../components/Buttons/ButtonAdd/ButtonAdd';
 import Breadcrumbs from '../../components/Breadcrumbs/Breadcrumbs';
 import Counter from '../../components/Counter/Counter';
 import styles from './ProductDetailsPage.module.css';
@@ -101,7 +101,7 @@ function ProductDetailsPage() {
             </div>
             <div className={styles.counterAndButton}>
               <Counter quantity={quantity} setQuantity={setQuantity} />
-              <AddBlueButton onClick={handleAddToCart} />
+              <ButtonAdd onClick={handleAddToCart} />
             </div>
             <div className={styles.productDescription}>
               <h3>Description</h3>
