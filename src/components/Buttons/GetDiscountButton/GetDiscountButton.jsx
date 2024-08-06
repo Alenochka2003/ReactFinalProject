@@ -26,11 +26,11 @@ function GetDiscountButton({ onClick }) {
       >
         {isRegistered ? 'Request Submitted' : 'Get a discount'}
       </button>
-      {showModal && (
+      {/* {showModal && (
         <div className={styles.modal}>
           <div className={styles.modalContent}>Вы зарегистрировались</div>
         </div>
-      )}
+      )} */}
     </div>
   );
 }
