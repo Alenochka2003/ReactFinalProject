@@ -1,6 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Variables --------------------------------------------------- */
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: #333; 
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70.4px;
+  margin: 0 0 40px 0;
+}
+
+.HauptContainer {
+  max-width: calc(1200px + 24px * 2); 
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px; 
+  padding-right: 24px; 
+}
+
+/* Общие цвета и настройки  для всего сайта  */
 
 :root {
   --color-blue: #0D50FF;
@@ -13,7 +41,7 @@
 
   --border-radius-small: 6px;
   --border-radius-large: 12px;
-  --border: 1px solid var(--color-dark-gray);
+  --border: 1px solid rgba(139, 139, 139, 1);
 
   --input-height: 54px;
 
@@ -25,44 +53,9 @@
   --transition-duration: all 0.2s;
 }
 
-/* General Layout Styles --------------------------------------- */
-
-body,
-html {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: Montserrat, sans-serif;
-  font-size: 20px;
-  line-height: 26px;
-  color: var(--color-dark);
-  font-weight: 500;
-}
-
-h2 {
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 70.4px;
-  margin: 0 0 40px 0;
-}
-
-.HauptContainer {
-  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
-  margin-inline: auto;
-  padding-inline: var(--container-padding-x);
-}
-
-/* a:focus,
-button:focus,
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 2px solid var(--color-blue);
-  outline-offset: 2px;
-} */
 
 
-/* Title h2 and button block -----------------*/
+/* Заголовки и кнопки общие настройки  h2 - button*/
 
 .titleContainer h2 {
   font-size: 64px;
@@ -101,27 +94,28 @@ flex-direction: column;
   }
 }
 
+
 .titleContainerLine {
   width: 100%;
   height: 1px;
-  background-color: var(--color-light-gray);
+  background-color: #d3d3d3; 
   margin-left: 32px;
 }
 
 .titleContainerButton {
   font-size: 16px;
   font-weight: 500;
-  color: var(--color-dark-gray);
-  background-color: var(--color-light);
-  border: 1px solid var(--color-light-gray);
-  border-radius: var(--border-radius-small);
+  color: #666; 
+  background-color: #fff; 
+  border: 1px solid #d3d3d3; 
+  border-radius: 4px; 
   white-space: nowrap;
   padding: 6px 16px;
 }
 
 .titleBlockButton:hover {
-  color: var(--color-dark-gray);
-  background-color: var(--color-light-gray2);
+  color: #666; 
+  background-color: #e6e6e6; 
 }
 
 
@@ -133,13 +127,8 @@ button,
 input,
 textarea,
 svg * {
-  transition: var(--transition-duration);
+  transition: 0.3s; 
 }
-
-/* svg * {
-  transition-duration: fill, stroke;
-  transition-duration: var(--transition-duration);
-} */
 
 ul,
 ol {
@@ -156,16 +145,22 @@ a {
 }
 
 a {
-  color: var(--color-dark);
+  color: #000000; 
 }
 
 a:hover {
-  color: var(--color-blue);
+  color: #0000ff;
 }
 
-/* Normalise -------------------------------------------------- */
+
 /**
-  Нормализация блочной модели
+    Убираем внутренние отступы слева  
+   */
+   :where(ul, ol):where([class]) {
+    padding-left: 0;
+  }
+/**
+  Делаем нормальной блочную модель
  */
 *,
 *::before,
@@ -173,13 +168,7 @@ a:hover {
   box-sizing: border-box;
 }
 
-/**
-    Убираем внутренние отступы слева тегам списков,
-    у которых есть атрибут class
-   */
-:where(ul, ol):where([class]) {
-  padding-left: 0;
-}
+
 
 /**
     Убираем внешние отступы body и двум другим тегам,
@@ -191,8 +180,8 @@ body,
 }
 
 /**
-    Убираем внешние отступы вертикали нужным тегам,
-    у которых есть атрибут class
+    Убираем  отступы по вертикали  всем 
+    class
    */
 :where(h1,
   h2,
@@ -217,21 +206,15 @@ body,
   border: none;
 }
 
-/**
-    Убираем стандартный маркер маркированному списку,
-    у которого есть атрибут class
-   */
+
 :where(ul[class]) {
   list-style: none;
 }
 
 /**
-    Обнуляем вертикальные внешние отступы параграфа,
-    объявляем локальную переменную для внешнего отступа вниз,
-    чтобы избежать взаимодействие с более сложным селектором
+    Обнуляем вертикальные внешние отступы параграфа
    */
 p {
-  /* --paragraphMarginBottom: 24px; */
 
   margin-block: 0;
 }
@@ -246,16 +229,14 @@ p:where(:not([class]):not(:last-child)) {
 
 
 /**
-    Упрощаем работу с изображениями
+    Упрощаем изображениe
    */
 img {
   display: block;
   max-width: 100%;
 }
 
-/**
-    Наследуем свойства шрифт для полей ввода
-   */
+
 input,
 textarea,
 select,
@@ -264,36 +245,23 @@ button {
 }
 
 html {
-  /**
-      Пригодится в большинстве ситуаций
-      (когда, например, нужно будет "прижать" футер к низу сайта)
-     */
+ 
   height: 100%;
 }
 
-/**
-    Плавный скролл
-   */
 html,
 :has(:target) {
   scroll-behavior: smooth;
 }
 
 body {
-  /**
-      Пригодится в большинстве ситуаций
-      (когда, например, нужно будет "прижать" футер к низу сайта)
-     */
+
   min-height: 100%;
-  /**
-      Унифицированный интерлиньяж
-     */
+
   line-height: 1.5;
 }
 
-/**
-    Приводим к единому цвету svg-элементы
-   */
+
 svg *[fill] {
   fill: currentColor
 }
@@ -302,9 +270,90 @@ svg *[stroke] {
   stroke: currentColor
 }
 
-/**
-    Чиним баг задержки смены цвета при взаимодействии с svg-элементами
-   */
 svg * {
   transition-property: fill, stroke;
 }
+
+/* .titleContainerLine {
+  width: 100%;
+  height: 1px;
+  background-color: var(--color-light-gray);
+  margin-left: 32px;
+}
+
+.titleContainerButton {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-dark-gray);
+  background-color: var(--color-light);
+  border: 1px solid var(--color-light-gray);
+  border-radius: var(--border-radius-small);
+  white-space: nowrap;
+  padding: 6px 16px;
+}
+
+.titleBlockButton:hover {
+  color: var(--color-dark-gray);
+  background-color: var(--color-light-gray2);
+}
+
+ */
+
+
+
+/* body,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 70.4px;
+  margin: 0 0 40px 0;
+}
+
+.HauptContainer {
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  margin-inline: auto;
+  padding-inline: var(--container-padding-x);
+} */
+
+/* a,
+Link,
+button,
+input,
+textarea,
+svg * {
+  transition: var(--transition-duration);
+}
+
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button,
+select,
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a {
+  color: var(--color-dark);
+}
+
+a:hover {
+  color: var(--color-blue);
+} */

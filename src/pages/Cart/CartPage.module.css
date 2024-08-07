@@ -31,8 +31,8 @@
   justify-content: start;
   width: 100%;
   height: 180px;
-  border: 1px solid var(--color-light-gray);
-  border-radius: var(--border-radius-large);
+  border: 1px solid #d3d3d3;
+  border-radius: 12px;
   overflow: hidden;
   gap: 32px;
 }
@@ -41,7 +41,7 @@
   width: 200px;
   height: 180px;
   overflow: hidden;
-  border-right: 1px solid var(--color-light-gray);
+  border-right: 1px solid #d3d3d3;
   flex-shrink: 0;
 }
 
@@ -93,14 +93,14 @@
   font-size: 40px;
   font-weight: 600;
   line-height: 44px;
-  color: var(--color-dark);
+  color: #333;
 }
 
 .originalPrice {
   font-size: 16px;
   font-weight: 500;
   line-height: 26px;
-  color: var(--color-dark-gray);
+  color: #a9a9a9;
   text-decoration: line-through;
 }
 
@@ -120,20 +120,20 @@
   background: none;
   padding: 0;
   margin: 0;
-  color: var(--color-dark-gray);
-  transition: var(--transition-duration);
+  color: #a9a9a9;
+  transition: 0.3s;
 }
 
 .removeButton:hover {
-  color: var(--color-dark);
+  color: #333;
 }
 
 .orderDetails {
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  background-color: var(--color-light-gray2);
-  border-radius: var(--border-radius-large);
+  background-color: #e5e5e5;
+  border-radius: 12px;
   min-width: 548px;
   padding: 32px;
   box-sizing: border-box;
@@ -151,7 +151,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 52px;
-  color: var(--color-dark-gray);
+  color: #a9a9a9;
   margin-bottom: 5px;
 }
 
@@ -165,7 +165,7 @@
   font-size: 40px;
   font-weight: 500;
   line-height: 52px;
-  color: var(--color-dark-gray);
+  color: #a9a9a9;
   margin: 0 0 32px 0;
 }
 
@@ -193,22 +193,18 @@
   text-align: center;
   border-radius: 6px;
   cursor: pointer;
-  transition: var(--transition-duration);
-  background-color: var(--color-blue);
-  color: var(--color-light);
+  transition: 0.3s;
+  background-color: #007bff;
+  color: #fff;
   text-decoration: none;
 }
 
 .continueShoppingButton:hover {
-  background-color: var(--color-dark);
-  color: var(--color-light);
+  background-color: #333;
+  color: #fff;
 }
 
-/* .continueShoppingButton:active {
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  border: 1px solid var(--color-dark);
-} */
+
 
 .formContent {
   display: flex;
@@ -231,19 +227,30 @@
   font-size: 20px;
   font-weight: 500;
   line-height: 26px;
-  border: 1px solid var(--color-light-gray);
-  background: var(--color-light);
-  border-radius: var(--border-radius-small);
-  color: var(--color-dark);
+  border: 1px solid #d3d3d3;
+  background: #fff;
+  border-radius: 8px;
+  color: #333;
 }
 
 .formGroup input::placeholder {
-  color: var(--color-dark-gray);
+  color: #a9a9a9;
 }
 
-/* 
-@media (max-width: 1024px) and (min-width: 768px)
-НУЖНО ДОБАваить  */
+
+@media (max-width: 1440px) and (min-width: 1024px) {
+  .cartItemTitle {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    max-width: 400px;
+    white-space: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+}
+
 
 
 /* For screens from 1024px to 768px */
@@ -306,28 +313,6 @@
   }
 }
 
-/* @media (max-width: 420px) {
-  .cartContent, .cartDetails {
-    flex-direction: column;
-    align-items: flex-start;
-
-  }
-
-  .orderDetails {
-    min-width: auto;
-    width: 100%;
-    height: auto;
-  }
-
-  .cartItemDetails{
-    height: auto;
-    flex-direction: column;
-  }
-
-  .cartItemTitle{
-    flex-wrap: wrap;
-  }
-} */
 
 @media (max-width: 420px) {
   .cartContent, .cartDetails {

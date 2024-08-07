@@ -6,7 +6,7 @@ import axios from 'axios';
 import { openModal, closeModal } from '../../redux/modalSlice';
 import { removeItem, clearCart, updateQuantity } from '../../redux/cartSlice';
 import Counter from '../../components/Counter/Counter';
-import OrderButton from '../../components/Buttons/OrderButton/OrderButton';
+import ButtonOrder from '../../components/Buttons/ButtonOrder/ButtonOrder';
 import styles from './CartPage.module.css';
 
 const API_URL = "http://localhost:3333";
@@ -248,7 +248,7 @@ function CartPage() {
                     </label>
                   </div>
                 </form>
-                <OrderButton
+                <ButtonOrder
                   onClick={handlePlaceOrder}
                   disabled={isLoading || isSubmitted || !isFormValid()}
                   isLoading={isLoading}
