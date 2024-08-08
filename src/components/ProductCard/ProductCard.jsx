@@ -26,7 +26,7 @@ const ProductCard = ({ product }) => {
       <div className={styles.productImageContainer}>
         <img src={`http://localhost:3333${product.image}`} alt={product.title} className={styles.productImage} />
         {product.discont_price && (
-          <div className={styles.discountFlag}>
+          <div className={styles.discountCheck}>
             -{calculateDiscountPercentage(product.price, product.discont_price)}%
           </div>
         )}

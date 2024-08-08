@@ -93,7 +93,7 @@ function ProductDetailsPage() {
               {product.discont_price && (
                 <>
                   <span className={styles.originalPrice}>${product.price}</span>
-                  <span className={styles.discountFlag}>
+                  <span className={styles.discountCheck}>
                     -{Math.round(((product.price - product.discont_price) / product.price) * 100)}%
                   </span>
                 </>
@@ -111,7 +111,7 @@ function ProductDetailsPage() {
                 {product.description}
               </p>
               <button 
-                className={styles.readMoreButton} 
+                className={styles.MoreButton} 
                 onClick={() => setIsExpanded(!isExpanded)}
                 style={{ display: product.description ? 'block' : 'none' }}
               >
@@ -254,7 +254,7 @@ export default ProductDetailsPage;
 //               {product.discont_price && (
 //                 <>
 //                   <span className={styles.originalPrice}>${product.price}</span>
-//                   <span className={styles.discountFlag}>
+//                   <span className={styles.discountCheck}>
 //                     -{Math.round(((product.price - product.discont_price) / product.price) * 100)}%
 //                   </span>
 //                 </>

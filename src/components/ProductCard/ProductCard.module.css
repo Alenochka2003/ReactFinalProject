@@ -23,7 +23,7 @@
 .productImage:hover{
   transform: scale(0.95);
 }
-.discountFlag {
+.discountCheck {
   position: absolute;
   top: 16px;
   right: 16px;

@@ -12,6 +12,7 @@
   width: 100%;
   grid-template-columns: 3fr 2fr;
   gap: 32px;
+
 }
 
 .gridItem {
@@ -88,7 +89,7 @@ iframe {
   }
 }
 
-/* Устройства с шириной экрана от 1024px до 768px */
+
 @media (max-width: 1024px) and (min-width: 768px) {
   .gridContainer {
     grid-template-columns: 1fr;
@@ -109,7 +110,7 @@ iframe {
   }
 }
 
-/* Устройства с шириной экрана от 768px до 520px */
+
 @media (max-width: 768px) and (min-width: 520px) {
   .gridContainer {
     grid-template-columns: 1fr;
@@ -130,7 +131,7 @@ iframe {
   }
 }
 
-/* Устройства с шириной экрана до 520px */
+
 @media (max-width: 520px) {
   .gridContainer {
     grid-template-columns: 1fr;
@@ -157,5 +158,15 @@ iframe {
   .footerStyle {
     padding-bottom: var(--blocks-margin-y);
     margin-top: var(--blocks-margin-y);
+  }
+}
+@media (max-width: 1023px) {
+  .footerStyle {
+    padding-bottom: 40px;
+  }
+
+  .gridItem> :last-child {
+    font-size: 32px;
+    Line-height: 36px;
   }
 }

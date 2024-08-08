@@ -37,7 +37,7 @@
   margin-bottom: 32px;
 }
 
-.productPrice {}
+
 
 .currentPrice {
   font-size: 64px;
@@ -55,7 +55,7 @@
   margin-left: 32px;
 }
 
-.discountFlag {
+.discountCheck {
   color: var(--color-light);
   background-color: var(--color-blue);
   font-weight: 600;
@@ -187,7 +187,7 @@
     margin-left: 0;
   }
 
-  .discountFlag {
+  .discountCheck {
     top: -24px;
   }
 
@@ -267,7 +267,7 @@
     margin-left: 0;
   }
 
-  .discountFlag {
+  .discountCheck {
     top: -20px;
   }
 

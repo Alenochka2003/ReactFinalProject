@@ -1,3 +1,12 @@
+
+.ModalContent h2 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  margin-bottom: 24px;
+}
+
+
 .Modal {
   position: fixed;
   top: 0;
@@ -25,12 +34,6 @@
   line-height: 24px;
 }
 
-.ModalContent h2 {
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 44px;
-  margin-bottom: 24px;
-}
 
 .ModalContent p:not(:last-child) {
   margin-bottom: 15px;
